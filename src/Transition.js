@@ -156,7 +156,7 @@ const createTransition = (style = Fade, animation = Animated.timing) => {
 
       const config = Object.assign({}, other, {
         toValue: 1,
-        useNativeDriver: item.style.useNativeDriver,
+        useNativeDriver: false,
       });
 
       this.__animation = item.animation(value, config);
